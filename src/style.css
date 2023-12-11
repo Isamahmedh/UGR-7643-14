@@ -60,13 +60,19 @@
     color: antiquewhite;
     font-weight: 500;
     margin-left: 1rem;
-    transition: color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .navigationbar a:hover,
   .navigationbar a:active {
+    transform: translateY(-5px);
     color: #081b29;
   }
+
+  .navigationbar a.current {
+    color: #081b29;
+  }
+
   span {
     font-family: Lucida Handwriting;
     color: rgb(174, 224, 100);
@@ -83,6 +89,31 @@
     margin: 0;
     font-size: 1.2rem;
 }
+
+@media screen and (max-width:425px){
+  .navigationbar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-size: small;
+  }
+  .logo {
+    font-size: medium;
+    margin-left: -0.5rem;
+  }
+  .navigationbar a {
+    font-size: small;
+  }
+  .contact_info a {
+    display: flex;
+    justify-content: space-between;
+    border: solid;
+    width: 100%;
+    margin: 3%;
+  }
+
+}
+
 
 .home_content {
     min-height: 100vh;
@@ -205,6 +236,11 @@
 .contact_info img {
     width: 50px;
     margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact_info img:hover {
+  transform: translateY(-25px);
 }
 
 .my_work_h1 {
