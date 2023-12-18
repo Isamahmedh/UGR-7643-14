@@ -3,31 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SnapScape</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="icon" href="/images/headphone-icon_34408.ico" />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"> SnapScape</a>
-
-      <nav class="navigationbar">
-        <a href="home.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="My_Work.html">My Work</a>
-        <a href="Gallery.html">Gallary</a>
-        <a href="Contact.html">Contact</a>
+    <header class="header has-background-success">
+      <a href="#" class="logo has-text-white is-size-3">SnapScape</a>
+      <nav class="navbar is-success">
+        <div class="navbar-end">
+          <a class="navbar-item" href="home.html">Home</a>
+          <a class="navbar-item" href="About.html">About</a>
+          <a class="navbar-item-current" href="My_Work.html">My Work</a>
+          <a class="navbar-item" href="Gallery.html">Gallery</a>
+          <a class="navbar-item" href="Contact.html">Contact</a>
+        </div>
       </nav>
     </header>
-    <section class="My_Work" id="My_Work">
-        <div class="My_Work-content">
-          <h1>My work</h1>
-          <div class="text-animation">
-            <h3>Wellcome to my own collection of works.</h3>
-          </div>
-          <p>
-            
-          </p>
-          <img src="/images/four.jpg" alt="creater's work.">
-          <img src="/images/eight.jpg" alt="creater's work 2">
-          <img src="/images/nine.jpg" alt="creater's work 3">
+    <section class="section My_Work-content">
+      <h1 class="title is-2 has-text-success has-text-centered">My Work</h1>
+      <h3 class="subtitle is-3 has-text-success has-text-centered">
+        Welcome to my own collection of works.
+      </h3>
+    </section>
+    <figure class="image is-4by3">
+      <img class="my_image" src="/images/three.jpg" alt="creator's work." />
+    </figure>
+    <figure class="image is-4by3">
+      <img class="my_image2" src="/images/four.jpg" alt="creator's work 2" />
+    </figure>
+    <figure class="image is-4by3">
+      <img class="my_image3" src="/images/five.jpg" alt="creator's work 3" />
+    </figure>
+    <footer class="footer has-background-success has-text-white has-text-centered">
+      <p class="is-size-4">&copy; 2023 SnapScape. All rights reserved.</p>
+    </footer>
   </body>
 </html>

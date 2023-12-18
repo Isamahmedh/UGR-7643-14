@@ -3,35 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SnapScape</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="icon" href="/images/headphone-icon_34408.ico" />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"> SnapScape</a>
-
-      <nav class="navigationbar">
-        <a href="home.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="My_Work.html">My Work</a>
-        <a href="Gallery.html">Gallary</a>
-        <a href="Contact.html">Contact</a>
+    <header class="header has-background-success">
+      <a href="#" class="logo has-text-white is-size-3">SnapScape</a>
+      <nav class="navbar is-success">
+        <div class="navbar-end">
+          <a class="navbar-item-current" href="home.html">Home</a>
+          <a class="navbar-item" href="About.html">About</a>
+          <a class="navbar-item" href="My_Work.html">My Work</a>
+          <a class="navbar-item" href="Gallery.html">Gallery</a>
+          <a class="navbar-item" href="Contact.html">Contact</a>
+        </div>
       </nav>
     </header>
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi I'm <span>Isam Ahmed</span></h1>
-        <div class="text-animation">
-          <h3>I do Photography and Design.</h3>
-        </div>
-        <p>
-          Welcome to my visual haven - where inspiration meets creativity.
-          Explore a world of curated ideas, designed to spark your imagination.
-        </p>
-        <img
-          src="/images/home2.jpg"
-          alt="Photo of the creater of the website Isam Ahmed."
-        />
-      </div>
-    </section>
+    <div class="section home_content">
+      <h1 class="title is-1 has-text-success has-text-centered">
+        Hi I'm <span class="has-text-link">Isam Ahmed</span>
+      </h1>
+      <h3 class="subtitle is-3 has-text-success has-text-centered">
+        I do <span class="has-text-link">Photography</span> and
+        <span class="has-text-link">Design</span>.
+      </h3>
+      <p class="content has-text-white">
+        Welcome to my visual haven - where inspiration meets creativity. Explore
+        a world of curated ideas, designed to spark your imagination.
+      </p>
+    </div>
+    <figure class="image is-4by3">
+      <img class="home_image" src="/images/small.jpg" alt="photo" />
+    </figure>
+    <footer class="footer has-background-success has-text-white has-text-centered">
+      <p>&copy; 2023 SnapScape. All rights reserved.</p>
+    </footer>
   </body>
 </html>

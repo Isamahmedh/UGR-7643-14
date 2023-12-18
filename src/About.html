@@ -3,36 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SnapScape</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="icon" href="/images/headphone-icon_34408.ico" />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo"> SnapScape</a>
-
-      <nav class="navigationbar">
-        <a href="home.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="My_Work.html">My Work</a>
-        <a href="Gallery.html">Gallary</a>
-        <a href="Contact.html">Contact</a>
+    <header class="header has-background-success">
+      <a href="#" class="logo has-text-white is-size-3">SnapScape</a>
+      <nav class="navbar is-success">
+        <div class="navbar-end">
+          <a class="navbar-item" href="home.html">Home</a>
+          <a class="navbar-item-current" href="About.html">About</a>
+          <a class="navbar-item" href="My_Work.html">My Work</a>
+          <a class="navbar-item" href="Gallery.html">Gallery</a>
+          <a class="navbar-item" href="Contact.html">Contact</a>
+        </div>
       </nav>
     </header>
-    <section class="About" id="About">
-      <div class="About-content">
-        <h1>About</h1>
-        <div class="text-animation">
-          <h3>Hi There</h3>
-        </div>
-        <p>
-          Discover the story behind SnapScape, where individual passions unite
-          in a mosaic of inspiration. Founded on the belief that creativity
-          knows no bounds, I invite you into the heart of my vibrant community.
-          Join me on this visual journey, where every pin tells a tale of
-          boundless imagination and shared experiences.
-        </p>
-        <img src="/images/one.jpg" alt="Introduction photo 1." />
-        <img src="/images/two.jpg" alt="Introduction Photo 2" />
+    <h1 class="title is-2 has-text-success has-text-centered">About</h1>
+    <section class="section">
+      <div class="container">
+        <h3 class="title is-3 has-text-success has-text-centered">Hi There</h3>
+        <figure class="image is-4by3">
+          <img class="hi_image" src="/images/Hi.jpg" alt="Hey" />
+        </figure>
       </div>
     </section>
+    <p class="content has-text-success is-size-4 has-text-centered">
+      Discover the story behind SnapScape, where individual passions unite in a
+      mosaic of inspiration. Founded on the belief that creativity knows no
+      bounds, I invite you into the heart of my vibrant community. Join me on
+      this visual journey, where every pin tells a tale of boundless imagination
+      and shared experiences.
+    </p>
+    <figure class="image is-4by3">
+      <img
+        class="about_image1"
+        src="/images/one.jpg"
+        alt="Introduction photo 1."
+      />
+    </figure>
+    <figure class="image is-4by3">
+      <img
+        class="about_image2"
+        src="/images/two.jpg"
+        alt="Introduction Photo 2"
+      />
+    </figure>
+    <footer class="footer has-background-success has-text-white has-text-centered">
+      <p class="is-size-4">&copy; 2023 SnapScape. All rights reserved.</p>
+    </footer>
   </body>
 </html>
